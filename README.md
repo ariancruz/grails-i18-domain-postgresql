@@ -1,7 +1,7 @@
 Grails I18N Domain Postgresql
 =============================
 
-This is a Grails plugin to internationalize the domain classes using a [Postgresql Hstore](http://www.postgresql.org/docs/9.3/static/hstore.html) type for storing all the values in one column instead of using one column for every language.
+This is a Grails plugin to internationalizae the domain classes using a [Postgresql Hstore](http://www.postgresql.org/docs/9.3/static/hstore.html) type for storing all the values in one column instead of using one column for every language.
 The plugin depends on [Grails Postgresql Extensions](http://grails.org/plugin/postgresql-extensions) plugins to use Hstore fields.
 
 Using Groovy Metaprogramming the plugin adds getters to the internationalized domain classes to access the properties in the desired language. For example, if the domain class has a property called `title` configured as internationalizable, the plugin will add the method `getI18nTitle()` to the domain class.
